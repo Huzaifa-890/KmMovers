@@ -1,27 +1,26 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-
-
-const Welcome = ({navigation}) => {
+const Welcome = ({ navigation }) => {
   return (
-    <View>
-Kmmores.com
+    <View style={styles.container}>
+      <Text style={styles.brandText}>Kmmores.com</Text>
     </View>
   );
-};  
+};
 
 const styles = StyleSheet.create({
- container: {
+  container: {
+    flex: 1,                  // full screen
     padding: 10,
-    backgroundColor: '#f5f5f5', // light gray background
-    alignItems: 'center',       // center horizontally
-    justifyContent: 'center',   // center vertically
+    backgroundColor: '#f5f5f5',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   brandText: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: 'black',           // dark blue-gray
+    color: 'black',
     letterSpacing: 1,
   },
 });
