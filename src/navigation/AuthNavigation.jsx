@@ -2,6 +2,7 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import Welcome from '../screens/Auth/Welcome';
+import SplashScreen from '../Utils/SplashScreen';
 
 const AuthNavigation = props => {
   const Stack = createNativeStackNavigator();
@@ -17,6 +18,11 @@ const AuthNavigation = props => {
         screenOptions={{
           ...screenOptions,
         }}>
+        <Stack.Screen
+          name="splash"
+          component={SplashScreen}
+          options={{ title: 'splash' }}
+        />
         <Stack.Screen
           name="welcome"
           component={Welcome}

@@ -6,7 +6,7 @@ const Welcome = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.brandText}>Kmmores.com</Text>
     </View>
-  );
+  ); 
 };
 
 const styles = StyleSheet.create({
