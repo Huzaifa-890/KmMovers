@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { View, Image, StyleSheet, Dimensions } from 'react-native';
 
-const SplashScreen = ({ navigation}) => {
+const SplashScreen = ({ navigation }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace('Welcome');
+      navigation.navigate('welcome');
     }, 3000); // 3 seconds
 
     return () => clearTimeout(timer); // cleanup
